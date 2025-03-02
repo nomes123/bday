@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naomi's Birthday Wishlist</title>
+    <style>
+        body {
+            background-color: #ffe6f2;
+            font-family: 'Arial', sans-serif;
+            color: #d63384;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: #fff0f6;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 28px;
+        }
+        .countdown {
+            font-size: 20px;
+            margin: 15px 0;
+        }
+        .wishlist {
+            text-align: left;
+            padding: 10px;
+        }
+        .wishlist li {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎀Naomi's Birthday Wishlist 🎀</h1>
+        <p class="countdown" id="countdown"></p>
+        <h2>What I Want ✨</h2>
+        <ul class="wishlist">
+            <li>💖 tattoo voucher (available at inkfinity)</li>
+            <li>🌸 easy equities voucher</li>
+            <li>🎀 essence lip liner (brown) </li>
+            <li>💖 lentheric hoity toity pink macaroon body mist</li>
+            <li>🌸 oh so heavenly "wraped romance" body lotion </li>
+        </ul>
+    </div>
+
+    <script>
+        function countdownToBirthday() {
+            const birthday = new Date("2025-05-10"); // Change this to your actual birthday
+            const now = new Date();
+            const diff = birthday - now;
+            const days = Math.ceil(diff / (1000 * 60 * 60 * 24));
+            document.getElementById("countdown").textContent = `only ${days} days until a bad bitch turns 19 🎂`;
+        }
+        countdownToBirthday();
+    </script>
+</body>
+</html>
